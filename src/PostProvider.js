@@ -1,12 +1,5 @@
 import { useState, createContext, useContext } from "react";
-import { faker } from "@faker-js/faker";
-
-function createRandomPost() {
-  return {
-    title: `${faker.hacker.adjective()} ${faker.hacker.noun()}`,
-    body: faker.hacker.phrase(),
-  };
-}
+import { createRandomPost } from "./RandomPost";
 
 const PostContext = createContext();
 
